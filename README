@@ -1,0 +1,65 @@
+bin86
+------------------------------------------
+80(3)86 assembler and linker
+
+Runtime requirements:
+  cygwin-1.5.22-1
+
+Build requirements:
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
+  automake1.9-1.9.6-1
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.6-1
+  flex-2.5.33-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://homepage.ntlworld.com/robert.debath/
+
+Canonical download:
+  http://homepage.ntlworld.com/robert.debath/dev86/
+
+-------------------------------------------
+
+Build instructions:
+  unpack bin86-0.16.17-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./bin86-0.16.17-X.cygport all
+
+This will create:
+  /usr/src/bin86-0.16.17-X-src.tar.bz2
+  /usr/src/bin86-0.16.17-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/as86.exe
+  /usr/bin/ld86.exe
+  /usr/bin/nm86.exe
+  /usr/bin/objdump86.exe
+  /usr/bin/size86.exe
+  /usr/share/doc/Cygwin/bin86-0.16.17.README
+  /usr/share/doc/bin86-0.16.17/ChangeLog
+  /usr/share/doc/bin86-0.16.17/README
+  /usr/share/man/man1/as86.1.gz
+  /usr/share/man/man1/ld86.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.16.17-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,15 @@
+DESCRIPTION="8086 compiler package"
+HOMEPAGE="http://homepage.ntlworld.com/robert.debath/"
+SRC_URI="${HOMEPAGE}/dev86/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake PREFIX=/usr
+}
+
+src_install() {
+	cd ${B}
+	dodir /usr/bin /usr/share/man/man1
+	cyginstall PREFIX=${D}/usr MANDIR=${D}/usr/share/man/man1
+}

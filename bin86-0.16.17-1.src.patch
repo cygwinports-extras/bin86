@@ -1,0 +1,12 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/bin86-0.16.17/ld/Makefile src/bin86-0.16.17/ld/Makefile
+--- origsrc/bin86-0.16.17/ld/Makefile	2003-10-06 12:14:16.000000000 -0500
++++ src/bin86-0.16.17/ld/Makefile	2006-11-19 01:06:03.196250000 -0600
+@@ -11,7 +11,7 @@
+ #
+ # -DREL_OUTPUT -DBUGCOMPAT	# -r Produces weird *.o files.
+ #
+-DEFS	=-DREL_OUTPUT
++DEFS	=-DREL_OUTPUT -DDETECTAOUT -DSTANDARD_GNU_A_OUT
+ 
+ # An alternative file for a non-standard a.out.h (eg i386 linux on an Alpha)
+ #
