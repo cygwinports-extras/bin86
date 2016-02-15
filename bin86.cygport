@@ -1,4 +1,9 @@
-DESCRIPTION="8086 compiler package"
+NAME="bin86"
+VERSION=0.16.17
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="80(3)86 assembler and linker"
+DESCRIPTION="80(3)86 assembler and linker"
 HOMEPAGE="http://homepage.ntlworld.com/robert.debath/"
 SRC_URI="${HOMEPAGE}/dev86/${P}.tar.gz"
 
